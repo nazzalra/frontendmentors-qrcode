@@ -3,7 +3,7 @@
 
 :root{
     /* radius */
-    --radius: .5rem;
+    --radius: 1rem;
 
     /* Colors */
     --clr-body: hsl(212, 45%, 89%);
@@ -37,27 +37,36 @@ img{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 220px;
+    width: 320px;
     background-color: var(--clr-container);
-    padding: .6rem;
+    padding: 1rem;
+}
+
+.container{
     border-radius: var(--radius);
 }
 
-.qr-code-img{
-    border-radius: var(--radius);
-    margin-bottom: .75rem;
+.qrcode-img{
+    border-radius: .7rem;
+}
+
+
+.text{
+    margin: 1rem;
 }
 
 .title,
 .subtitle{
     text-align: center;
-    margin: 0 .5rem .75rem;
 }
+
 .title{
     font-weight: 700;
+    font-size: 1.5em;
+    margin-bottom: 1rem;
 }
+
 .subtitle{
-    font-size: 70%;
     opacity: .4;
 }
 
