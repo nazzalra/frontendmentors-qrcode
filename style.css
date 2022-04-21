@@ -1,19 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 
 
-:root{
-    /* radius */
-    --radius: 1rem;
-
-    /* Colors */
-    --clr-body: hsl(212, 45%, 89%);
-    --clr-container: hsl(0, 0%, 100%);
-
-    /* Typography */
-    --ff-body: 'Outfit',sans-serif;
-    --fs-body: 15px;
-}
-
 *{
     box-sizing: border-box;
     margin: 0;
@@ -22,9 +9,12 @@
 
 body{
     min-height: 100vh;
-    font-family: var(--ff-body);
-    background-color: var(--clr-body);
-    font-size: var(--fs-body);
+    font-family: 'Outfit',sans-serif;
+    background-color: hsl(212, 45%, 89%);
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 img{
@@ -32,42 +22,34 @@ img{
     height: auto;
 }
 
-.container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 320px;
-    background-color: var(--clr-container);
+.card{
+    max-width: 330px;
+    min-width: 300px;
+    margin: 0 1rem;
+    background-color: hsl(0, 0%, 100%);
     padding: 1rem;
+    border-radius: 1.5rem;
 }
 
-.container{
-    border-radius: var(--radius);
-}
-
-.qrcode-img{
+.card img{
     border-radius: .7rem;
 }
 
-
 .text{
-    margin: 1rem;
-}
-
-.title,
-.subtitle{
+    max-width: 280px;
+    margin: 0 auto;
+    padding: 1.5rem .5rem;
     text-align: center;
 }
 
-.title{
-    font-weight: 700;
-    font-size: 1.5em;
+.text h2{
+    color: hsl(218, 44%, 22%);
     margin-bottom: 1rem;
 }
 
-.subtitle{
-    opacity: .4;
+.text p{
+    color: hsl(220, 15%, 55%);
 }
+
 
 
