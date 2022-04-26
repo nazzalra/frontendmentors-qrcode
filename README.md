@@ -6,35 +6,39 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 - [Overview](#overview)
   - [Screenshot](#screenshot)
+  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
-Build QR Code UI Component based on Design
+Build QR Code UI Component based on Design using HTML5 and CSS3
 
 ### Screenshot
 
 ![](./images/screenshot.png)
 
+### Links
+
+- Solution URL: [QR Code Component Solution](https://www.frontendmentor.io/solutions/qr-code-component-using-html5-css3-Hyuv2Q6Vc)
+- Live Site URL: [QR Code Component Live](https://frontendmentors-qrcode-o04cguv8p-r4mzn.vercel.app/)
+
 ## My process
 
 - Use Mobile-first workflow by resizing preview width to 375px
 - Identify the Structure
-  - make a container that group qrcode image, title and subtitle
+  - create main element that has card class. the element group card image, title and subtitle
 - Working with styles
   - import the desired font
   - set base style
-  - set container styles like width, padding, backgroundcolor, etc.
-  - position the container to the center both horizontally and vertically
-  - set qr code styles
-  - set title styles
-  - set subtitle styles
+  - set card styles like max-width, padding, backgroundcolor, etc.
+  - position the card to the center both horizontally and vertically by set the body element as a flex container and set both alignitems and justifycontent values to center
+  - set card image styles
+  - set card title styles
+  - set card subtitle styles
   - Refactor styles
     - use custom properties / variables if needed
 
