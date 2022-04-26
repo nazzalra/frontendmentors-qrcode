@@ -1,6 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 
 
+:root{
+    /* radius */
+    --radius: 1rem;
+
+    /* Colors */
+    --clr-body: hsl(212, 45%, 89%);
+    --clr-container: hsl(0, 0%, 100%);
+    --clr-title: hsl(218, 44%, 22%);
+    --clr-subtitle: hsl(220, 15%, 55%);
+
+    /* Typography */
+    --ff-body: 'Outfit',sans-serif;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -9,46 +23,44 @@
 
 body{
     min-height: 100vh;
-    font-family: 'Outfit',sans-serif;
-    background-color: hsl(212, 45%, 89%);
-    font-size: 15px;
+    font-family: var(--ff-body);
+    background-color: var(--clr-body);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 img{
+    display: block;
     max-width: 100%;
     height: auto;
 }
 
 .card{
-    max-width: 330px;
-    min-width: 300px;
-    margin: 0 1rem;
-    background-color: hsl(0, 0%, 100%);
+    max-width: 320px;
+    background-color: var(--clr-container);
     padding: 1rem;
-    border-radius: 1.5rem;
+    border-radius: var(--radius);
 }
 
-.card img{
+.card-img{
     border-radius: .7rem;
 }
 
-.text{
-    max-width: 280px;
-    margin: 0 auto;
-    padding: 1.5rem .5rem;
+
+.card-text{
+    margin: 1rem;
     text-align: center;
 }
 
-.text h2{
-    color: hsl(218, 44%, 22%);
+.title{
     margin-bottom: 1rem;
+    color: var(--clr-title);
+    font-size: 1.375rem;
 }
 
-.text p{
-    color: hsl(220, 15%, 55%);
+.subtitle{
+    color: var(--clr-subtitle);
 }
 
 
