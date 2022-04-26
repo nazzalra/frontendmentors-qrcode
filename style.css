@@ -41,6 +41,7 @@ img{
     background-color: var(--clr-container);
     padding: 1rem;
     border-radius: var(--radius);
+    margin: 0 1rem;
 }
 
 .card-img{
